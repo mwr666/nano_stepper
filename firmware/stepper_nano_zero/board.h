@@ -19,10 +19,10 @@
 
 
 //uncomment the follow lines if using the NEMA 23 10A hardware
-#define NEMA_23_10A_HW
+//#define NEMA_23_10A_HW
 
 //uncomment the following if the board uses the A5995 driver (NEMA 23 3.2A boards)
-//#define A5995_DRIVER
+#define A5995_DRIVER
 
 //The March 21 2017 NEMA 17 Smart Stepper has changed some pin outs
 // A1 was changed to read motor voltage, hence SW4 is now using D4
@@ -42,7 +42,7 @@
 
 #define NZS_AS5047_PIPELINE //does a pipeline read of encoder, which is slightly faster
 
-#define NZS_CONTROL_LOOP_HZ (6000) //update rate of control loop
+#define NZS_CONTROL_LOOP_HZ (4000) //update rate of control loop
 
 
 #define NZS_LCD_ABSOULTE_ANGLE  //define this to show angle from zero in positive and negative direction
